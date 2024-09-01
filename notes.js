@@ -51,6 +51,7 @@ const displayNotes = () =>{
     });
 }
 
+console.log("Notes Application: Hi user! Welcome to the notes application.");
 createNote('Shopping List', 'Buy milk, bread, and eggs.');
 createNote('Meeting Notes', 'Discuss the project deadline.');
 displayNotes();
