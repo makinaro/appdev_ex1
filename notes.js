@@ -24,9 +24,11 @@ const getNoteById = (id) =>{
 const updateNote = (id, newTitle, newContent) =>{
     const note = getNoteById(id);
     if (note) {
-        note.title = newTitle;
-        note.content = newContent;
+        if(newTitle) note.title = newTitle;
+        if(newContent) note.content = newContent;
         console.log("Note updated successfully.");
+    }else{
+        console.log("Note not found.");
     }
 }
 
